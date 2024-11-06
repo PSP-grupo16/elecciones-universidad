@@ -1,0 +1,74 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://wallpapers.com/images/featured/universidad-de-cambridge-k3uqfq0l7bwrrmpr.jpg);
+    background-size: cover;
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+  }
+
+  .info-childs {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .bienvenida {
+    flex-basis: 50%;
+  }
+
+  .container-form {
+    max-width: 900px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    transition: 1s ease;
+    background-color: rgba(0, 0, 0, .80);
+    color: white;
+    padding: 60px;
+  }
+
+  .form-information form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-information form label {
+    position: relative;
+  }
+
+  .form-information form i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333;
+  }
+
+  .form-information form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
+
+  .form-information form input[type="submit"] {
+    background-color: #f1c40f;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+  }
