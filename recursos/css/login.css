@@ -1,35 +1,3 @@
-:root {
-  --color-primario: #f1c40f;
-  --color-secundario: #f39c12;
-  --color-texto: #222;
-  --tipografia: "Montserrat", serif;
-}
-html {
-  box-sizing: border-box;
-  font-family: var(--tipografia);
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  align-items: center;
-  background-image: url(https://wallpapers.com/images/featured/universidad-de-cambridge-k3uqfq0l7bwrrmpr.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  font-size: 16px;
-  height: 100vh;
-  justify-content: center;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
 .contenedor {
   backdrop-filter: blur(.125rem);
   background-color: rgba(0, 0, 0, .80);
