@@ -8,8 +8,10 @@ html {
 body {
   align-items: center;
   background-image: url(https://wallpapers.com/images/featured/universidad-de-cambridge-k3uqfq0l7bwrrmpr.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  font-size: 16px;
   height: 100vh;
   justify-content: center;
 }
@@ -22,19 +24,19 @@ h3 {
 
 .contenedor {
   background-color: rgba(0, 0, 0, .80);
-  border-radius: 20px;
+  border-radius: 1.5rem;
   box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
   color: white;
   display: flex;
-  max-width: 900px;
-  padding: 60px;
+  max-width: 56rem;
+  padding: 3.75rem;
   transition: 1s ease;
 }
 
 .contenedor__elementos {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3.75rem;
   justify-content: space-between;
 }
 
@@ -76,4 +78,13 @@ h3 {
   font-weight: bold;
   padding: 10px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    padding: 10vw;
+  }
+  .contenedor__elementos {
+    gap: 2rem;
+  }
 }
