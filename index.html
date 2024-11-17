@@ -7,37 +7,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <title>Elecciones Estudiantiles - Politecnico Gran Colombiano</title>
   <link rel="stylesheet" href="recursos/css/style.css">
 </head>
 
 <body>
-  <div class="container-form">
-    <div class="information">
-      <div class="info-childs">
-        <div class="bienvenida">
-          <h2>Bienvenido estudiante</h2>
-          <p>Tu voto es importante para la comunidad estudiantil. ¡Elige con conciencia y construyamos juntos un mejor
-            futuro!</p>
-        </div>
-        <div class="form-information">
-          <div class="form-information-childs">
-            <h2>Inicia sesión</h2>
-            <p>Utiliza tus credenciales de acceso a tu correo</p>
-            <form>
-              <label>
-                <i class='bx bx-envelope'></i>
-                <input type="email" placeholder="Ingresa tu correo" required>
-              </label>
-              <label>
-                <i class='bx bxs-key'></i>
-                <input type="password" placeholder="Ingresa tu contraseña" required>
-              </label>
-              <input type="submit" value="Ingresar">
-            </form>
-          </div>
-        </div>
+  <div class="contenedor">
+    <div class="contenedor__elementos">
+      <div class="contenedor__elementos__bienvenida">
+        <h2>Bienvenido estudiante</h2>
+        <p>Tu voto es importante para la comunidad estudiantil. ¡Elige con conciencia y construyamos juntos un mejor
+          futuro!</p>
+      </div>
+      <div class="contenedor__elementos__formulario">
+        <h2>Inicia sesión</h2>
+        <p>Utiliza tus credenciales de acceso a tu correo</p>
+        <form class="formulario">
+          <label class="formulario__etiqueta">
+            <i class="formulario__etiqueta__icono bx bx-envelope"></i>
+            <input class="formulario__campo" type="email" placeholder="Ingresa tu correo" required>
+          </label>
+          <label class="formulario__etiqueta">
+            <i class="formulario__etiqueta__icono bx bxs-key"></i>
+            <input class="formulario__campo" type="password" placeholder="Ingresa tu contraseña" required>
+          </label>
+          <input class="formulario__boton" type="submit" value="Ingresar">
+        </form>
       </div>
     </div>
   </div>

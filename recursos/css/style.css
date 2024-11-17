@@ -1,74 +1,79 @@
 html {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", serif;
-  }
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url(https://wallpapers.com/images/featured/universidad-de-cambridge-k3uqfq0l7bwrrmpr.jpg);
-    background-size: cover;
-  }
+body {
+  align-items: center;
+  background-image: url(https://wallpapers.com/images/featured/universidad-de-cambridge-k3uqfq0l7bwrrmpr.jpg);
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
 
-  h1, h2, h3 {
-    margin: 0;
-  }
+h1,
+h2,
+h3 {
+  margin: 0;
+}
 
-  .info-childs {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-  }
+.contenedor {
+  background-color: rgba(0, 0, 0, .80);
+  border-radius: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+  color: white;
+  display: flex;
+  max-width: 900px;
+  padding: 60px;
+  transition: 1s ease;
+}
 
-  .bienvenida {
-    flex-basis: 50%;
-  }
+.contenedor__elementos {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: space-between;
+}
 
-  .container-form {
-    max-width: 900px;
-    display: flex;
-    border-radius: 20px;
-    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
-    transition: 1s ease;
-    background-color: rgba(0, 0, 0, .80);
-    color: white;
-    padding: 60px;
-  }
+.contenedor__elementos__bienvenida {
+  flex-basis: 50%;
+}
 
-  .form-information form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  .form-information form label {
-    position: relative;
-  }
+.formulario__etiqueta {
+  position: relative;
+}
 
-  .form-information form i {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #333;
-  }
+.formulario__etiqueta__icono {
+  color: #333;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
 
-  .form-information form input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-    padding-left: 40px;
-    box-sizing: border-box;
-  }
+.formulario__campo {
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 40px;
+  width: 100%;
+}
 
-  .form-information form input[type="submit"] {
-    background-color: #f1c40f;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-  }
+.formulario__boton {
+  background-color: #f1c40f;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+}
