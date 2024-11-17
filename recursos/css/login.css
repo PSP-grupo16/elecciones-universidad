@@ -1,6 +1,12 @@
+:root {
+  --color-primario: #f1c40f;
+  --color-secundario: #f39c12;
+  --color-texto: #222;
+  --tipografia: "Montserrat", serif;
+}
 html {
   box-sizing: border-box;
-  font-family: "Montserrat", serif;
+  font-family: var(--tipografia);
   margin: 0;
   padding: 0;
 }
@@ -63,21 +69,32 @@ h3 {
   border-radius: .25rem;
   border: none;
   box-sizing: border-box;
-  font-family: "Montserrat", serif;
+  color: var(--color-texto);
+  font-family: var(--tipografia);
   padding: 10px 10px 10px 40px;
+  transition: all .3s ease-in-out;
   width: 100%;
 }
 
+.formulario__campo:focus {
+  outline: var(--color-primario) solid .1rem;
+}
+
 .formulario__boton {
-  background-color: #f1c40f;
+  background-color: var(--color-primario);
   border-radius: .25rem;
   border: none;
   color: black;
   cursor: pointer;
-  font-family: "Montserrat", serif;
+  font-family: var(--tipografia);
   font-weight: bold;
   padding: 10px;
+  transition: all .3s ease-in-out;
   width: 100%;
+}
+
+.formulario__boton:hover {
+  background-color: var(--color-secundario);
 }
 
 @media screen and (max-width: 768px) {
