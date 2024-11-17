@@ -14,6 +14,8 @@ body {
   font-size: 16px;
   height: 100vh;
   justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -23,6 +25,7 @@ h3 {
 }
 
 .contenedor {
+  backdrop-filter: blur(.125rem);
   background-color: rgba(0, 0, 0, .80);
   border-radius: 1.5rem;
   box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
@@ -60,6 +63,7 @@ h3 {
   border-radius: .25rem;
   border: none;
   box-sizing: border-box;
+  font-family: "Montserrat", serif;
   padding: 10px 10px 10px 40px;
   width: 100%;
 }
@@ -70,6 +74,7 @@ h3 {
   border: none;
   color: black;
   cursor: pointer;
+  font-family: "Montserrat", serif;
   font-weight: bold;
   padding: 10px;
   width: 100%;
