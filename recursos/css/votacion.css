@@ -8,7 +8,7 @@
 
 .menu {
   align-items: center;
-  backdrop-filter: blur(.25rem);
+  backdrop-filter: var(--difuminado);
   background-color: var(--fondo-contenedor);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -45,7 +45,7 @@
 }
 
 .contenedor__candidatos {
-  backdrop-filter: blur(.25rem);
+  backdrop-filter: var(--difuminado);
   background-color: var(--fondo-contenedor);
   border-radius: 1.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -145,8 +145,8 @@
 }
 
 .resumen-candidato {
-  backdrop-filter: blur(.25rem);
-  background-color: var(--fondo-contenedor);
+  backdrop-filter: var(--difuminado);
+  background-color: var(--fondo-contenedor-1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-top-left-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
@@ -173,6 +173,7 @@
   color: var(--color-texto);
   cursor: pointer;
   font-size: 3rem;
+  padding: 0;
   position: absolute;
   right: 1rem;
   top: 1rem;
@@ -195,6 +196,19 @@
 .resumen-candidato__imagen img {
   display: block;
   object-fit: cover;
+  width: 100%;
+}
+
+.resumen-candidato__votar {
+  background-color: var(--color-primario);
+  border-radius: .5rem;
+  border: none;
+  color: var(--color-boton);
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  transition: all .3s ease-in-out;
   width: 100%;
 }
 
