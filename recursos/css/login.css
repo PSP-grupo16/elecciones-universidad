@@ -3,7 +3,7 @@ body {
 }
 
 .contenedor {
-  backdrop-filter: blur(.125rem);
+  backdrop-filter: blur(.25rem);
   background-color: var(--fondo-contenedor);
   border-radius: 1.5rem;
   box-shadow: 0 5px 7px rgba(0, 0, 0, .1);

@@ -6,7 +6,7 @@
   --color-boton-hover: #FFFFFF;
   --tipografia: "Montserrat", serif;
   --color-borde: rgba(0,0,0, 0.5);
-  --fondo-contenedor: rgba(255, 255, 255, 0.6);
+  --fondo-contenedor: rgba(255, 255, 255, 0.4);
 }
 
 /* Add prefer dark mode colors */
@@ -19,7 +19,7 @@
     --color-boton-hover: #0f385a;
     --tipografia: "Montserrat", serif;
     --color-borde: rgba(255, 255, 255, 0.5);
-    --fondo-contenedor: rgba(0, 0, 0, 0.8);
+    --fondo-contenedor: rgba(0, 0, 0, 0.5);
   }
 }
 
