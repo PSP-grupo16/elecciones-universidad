@@ -1,18 +1,22 @@
 :root {
-  --color-primario: #f1c40f;
-  --color-secundario: #f39c12;
-  --color-texto: hsl(0, 0%, 13%);
+  --color-primario: #0f385a;
+  --color-secundario: #002543;
+  --color-texto: #002543;
+  --color-boton: #f0f0f0;
+  --color-boton-hover: #FFFFFF;
   --tipografia: "Montserrat", serif;
   --color-borde: rgba(0,0,0, 0.5);
-  --fondo-contenedor: rgba(255, 255, 255, 0.8);
+  --fondo-contenedor: rgba(255, 255, 255, 0.6);
 }
 
 /* Add prefer dark mode colors */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primario: #f1c40f;
-    --color-secundario: #f39c12;
-    --color-texto: hsl(0, 0%, 87%);
+    --color-primario: #1fb2de;
+    --color-secundario: #FFFFFF;
+    --color-texto: #dedede;
+    --color-boton: #FFFFFF;
+    --color-boton-hover: #0f385a;
     --tipografia: "Montserrat", serif;
     --color-borde: rgba(255, 255, 255, 0.5);
     --fondo-contenedor: rgba(0, 0, 0, 0.8);
