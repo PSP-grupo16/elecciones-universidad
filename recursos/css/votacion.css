@@ -178,6 +178,26 @@
   top: 1rem;
 }
 
+.resumen-candidato__nombre {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.resumen-candidato__imagen {
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  margin: 1rem 1.5rem;
+  overflow: hidden;
+}
+
+.resumen-candidato__imagen img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
 @media screen and (max-width: 470px) {
   .contenedor__candidatos {
     margin: 2rem;
