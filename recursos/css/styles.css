@@ -31,9 +31,9 @@ body {
   background-image: url(https://wallpapers.com/images/featured/universidad-de-cambridge-k3uqfq0l7bwrrmpr.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   font-size: 16px;
-  height: 100vh;
   justify-content: center;
   margin: 0;
   padding: 0;
