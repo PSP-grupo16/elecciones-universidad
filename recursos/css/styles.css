@@ -2,6 +2,7 @@
   --color-primario: #0f385a;
   --color-secundario: #002543;
   --color-texto: #002543;
+  --color-campo-formulario: #002543;
   --color-boton: #f0f0f0;
   --color-boton-hover: #FFFFFF;
   --tipografia: "Montserrat", serif;
@@ -17,6 +18,7 @@
     --color-primario: #1fb2de;
     --color-secundario: #FFFFFF;
     --color-texto: #dedede;
+    --color-campo-formulario: #002543;
     --color-boton: #FFFFFF;
     --color-boton-hover: #0f385a;
     --tipografia: "Montserrat", serif;

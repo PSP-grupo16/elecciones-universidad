@@ -47,7 +47,7 @@ body {
   border-radius: .25rem;
   border: none;
   box-sizing: border-box;
-  color: var(--color-texto);
+  color: var(--color-campo-formulario);
   font-family: var(--tipografia);
   padding: 10px 10px 10px 40px;
   transition: all .3s ease-in-out;
