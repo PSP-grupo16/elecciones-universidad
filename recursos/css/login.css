@@ -1,3 +1,7 @@
+body {
+  height: 100vh;
+}
+
 .contenedor {
   backdrop-filter: blur(.125rem);
   background-color: var(--fondo-contenedor);
@@ -65,7 +69,7 @@
   background-color: var(--color-secundario);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 670px) {
   .contenedor {
     padding: 10vw;
   }
