@@ -144,6 +144,40 @@
   margin: 0;
 }
 
+.resumen-candidato {
+  backdrop-filter: blur(.25rem);
+  background-color: var(--fondo-contenedor);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  color: var(--color-texto);
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  height: 100vh;
+  padding: 2rem;
+  position: fixed;
+  transform: translateX(100%);
+  transition: all .3s ease-in-out;
+  width: 30vw;
+  z-index: 20;
+}
+
+.resumen-candidato.abierto {
+  transform: translateX(0);
+}
+
+.resumen-candidato__cerrar {
+  background-color: transparent;
+  border: none;
+  color: var(--color-texto);
+  cursor: pointer;
+  font-size: 3rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
 @media screen and (max-width: 470px) {
   .contenedor__candidatos {
     margin: 2rem;
@@ -168,6 +202,10 @@
 
   .contenedor__candidatos {
     margin-top: 8rem;
+  }
+
+  .resumen-candidato {
+    width: 100vw;
   }
 }
 

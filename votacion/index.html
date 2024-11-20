@@ -34,36 +34,51 @@
         <p class="bienvenida__descripcion">Selecciona un candidato para ver su hoja de vida y propuestas</p>
       </header>
       <section class="lista__candidatos">
-        <article class="lista__candidatos__candidato">
+        <article class="lista__candidatos__candidato js-candidato" data-index="0">
           <figure><img src="../recursos/imagenes/candidatos/1.jpg" alt="Juan David Ramírez"></figure>
           <h2>Juan David Ramírez</h2>
         </article>
-        <article class="lista__candidatos__candidato">
+        <article class="lista__candidatos__candidato js-candidato" data-index="1">
           <figure><img src="../recursos/imagenes/candidatos/3.jpg" alt="Laura González"></figure>
           <h2>Laura González</h2>
         </article>
-        <article class="lista__candidatos__candidato">
+        <article class="lista__candidatos__candidato js-candidato" data-index="2">
           <figure><img src="../recursos/imagenes/candidatos/2.jpg" alt="Carlos Pérez"></figure>
           <h2>Carlos Pérez</h2>
         </article>
-        <article class="lista__candidatos__candidato">
+        <article class="lista__candidatos__candidato js-candidato" data-index="3">
           <figure><img src="../recursos/imagenes/candidatos/4.jpg" alt="María Fernanda Gómez"></figure>
           <h2>María Fernanda Gómez</h2>
         </article>
-        <article class="lista__candidatos__candidato">
+        <article class="lista__candidatos__candidato js-candidato" data-index="4">
           <figure><img src="../recursos/imagenes/candidatos/7.jpg" alt="Andrés Rodríguez"></figure>
           <h2>Andrés Rodríguez</h2>
         </article>
-        <article class="lista__candidatos__candidato">
+        <article class="lista__candidatos__candidato js-candidato" data-index="5">
           <figure><img src="../recursos/imagenes/candidatos/6.jpg" alt="Sara López"></figure>
           <h2>Sara López</h2>
         </article>
       </section>
-      <!-- Sidebar to display candidate CV and proposals -->
-      <aside class="resumen-candidato"></aside>
-      <!-- Footer Submit vote form -->
-      <footer></footer>
     </section>
+    <aside class="resumen-candidato js-resumen">
+      <button class="resumen-candidato__cerrar js-resumen__cerrar"><i class='bx bx-x'></i></button>
+      <header class="resumen-candidato__header">
+        <h2 class="resumen-candidato__nombre js-candidato__nombre"></h2>
+        <figure class="resumen-candidato__imagen js-candidato__imagen">
+        </figure>
+      </header>
+      <section class="resumen-candidato__descripcion">
+        <h3 class="resumen-candidato__subtitulo">Descripción</h3>
+        <p class="resumen-candidato__texto js-candidato__descripcion"></p>
+      </section>
+      <section class="resumen-candidato__propuestas">
+        <h3 class="resumen-candidato__subtitulo">Propuestas</h3>
+        <ul class="resumen-candidato__lista js-candidato__propuestas"></ul>
+      </section>
+    </aside>
+    <!-- Footer Submit vote form -->
+    <footer></footer>
+    <script src="../recursos/js/votacion.js"></script>
 </body>
 
 </html>
