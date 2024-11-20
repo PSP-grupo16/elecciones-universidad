@@ -1,9 +1,24 @@
 :root {
   --color-primario: #f1c40f;
   --color-secundario: #f39c12;
-  --color-texto: #222;
+  --color-texto: hsl(0, 0%, 13%);
   --tipografia: "Montserrat", serif;
+  --color-borde: rgba(0,0,0, 0.5);
+  --fondo-contenedor: rgba(255, 255, 255, 0.8);
 }
+
+/* Add prefer dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primario: #f1c40f;
+    --color-secundario: #f39c12;
+    --color-texto: hsl(0, 0%, 87%);
+    --tipografia: "Montserrat", serif;
+    --color-borde: rgba(255, 255, 255, 0.5);
+    --fondo-contenedor: rgba(0, 0, 0, 0.8);
+  }
+}
+
 html {
   box-sizing: border-box;
   font-family: var(--tipografia);
@@ -20,8 +35,22 @@ body {
   font-size: 16px;
   height: 100vh;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body:after {
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  height: 100lvh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100lvw;
+  z-index: -1;
 }
 
 h1,

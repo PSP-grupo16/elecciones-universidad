@@ -1,9 +1,9 @@
 .contenedor {
   backdrop-filter: blur(.125rem);
-  background-color: rgba(0, 0, 0, .80);
+  background-color: var(--fondo-contenedor);
   border-radius: 1.5rem;
   box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
-  color: white;
+  color: var(--color-texto);
   max-width: 56rem;
   padding: 3.75rem;
   transition: all .3s ease-in-out;

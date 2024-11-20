@@ -8,13 +8,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://wallpapers.com">
   <link rel="preconnect" href="https://unpkg.com">
-  <link rel="preload" as="image" href="https://wallpapers.com/images/featured/universidad-de-cambridge-k3uqfq0l7bwrrmpr.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <title>Elecciones Estudiantiles - Politecnico Gran Colombiano</title>
-  <link rel="stylesheet" href="recursos/css/styles.css">
-  <link rel="stylesheet" href="recursos/css/login.css">
+  <link rel="stylesheet" href="/recursos/css/styles.css">
+  <link rel="stylesheet" href="/recursos/css/login.css">
 </head>
 
 <body>
@@ -32,17 +31,17 @@
         <form class="formulario">
           <label class="formulario__etiqueta">
             <i class="formulario__etiqueta__icono bx bx-envelope"></i>
-            <input class="formulario__campo" type="email" placeholder="Ingresa tu correo" required>
+            <input class="formulario__campo" name="email" type="email" placeholder="Ingresa tu correo" required>
           </label>
           <label class="formulario__etiqueta">
             <i class="formulario__etiqueta__icono bx bxs-key"></i>
-            <input class="formulario__campo" type="password" placeholder="Ingresa tu contraseña" required>
+            <input class="formulario__campo" name="password" type="password" placeholder="Ingresa tu contraseña" required>
           </label>
           <input class="formulario__boton" type="submit" value="Ingresar">
         </form>
       </div>
     </div>
   </div>
+  <script src="/recursos/js/login.js" defer></script>
 </body>
-
 </html>
