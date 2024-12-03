@@ -76,3 +76,44 @@
 .resultados svg rect {
   fill: var(--color-texto);
 }
+
+@media screen and (max-width: 470px) {
+  .contenedor__resultados {
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .contenedor {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    height: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .menu__navegacion {
+    display: none;
+  }
+
+  .contenedor__resultados {
+    margin-top: 8rem;
+  }
+
+  .resumen-candidato {
+    width: 100vw;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .menu__logo {
+    display: none;
+  }
+
+  .menu__logo--oscuro {
+    display: block !important;
+  }
+}
