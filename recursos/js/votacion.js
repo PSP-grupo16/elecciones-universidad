@@ -120,7 +120,6 @@
       resumenCandidato.querySelector('.js-candidato__propuestas').appendChild(li);
     });
   }
-
   /**
    * Definimos la función votar que redirecciona a la página de resultados
    * @returns {void}
