@@ -19,6 +19,12 @@
    */
   const botonCerrarResumen = document.querySelector('.js-resumen__cerrar');
   /**
+   * Definimos la constante botonVotar y le asignamos el valor del elemento con la clase .js-candidato__votar
+   * @type {HTMLElement}
+   * @returns {void}
+   */
+  const botonVotar = document.querySelector('.js-candidato__votar');
+  /**
    * Definimos la función clickTarjeta que recibe el evento de click en una tarjeta de candidato
    * @param {Event} evento Evento de click en una tarjeta de candidato
    * @listens tarjetasCandidatos:click
@@ -115,11 +121,22 @@
     });
   }
 
+  /**
+   * Definimos la función votar que redirecciona a la página de resultados
+   * @returns {void}
+   */
+  const votar = () => {
+    window.location.assign('/resultados/')
+  }
+
   // Recorremos las tarjetas de candidatos y añadimos un evento de click a cada una
   tarjetasCandidatos.forEach((tarjeta) => {
     // Añadimos un evento de click a la tarjeta que ejecuta la función clickTarjeta
     tarjeta.addEventListener('click', clickTarjeta);
   });
+
+  // Añadimos un evento de click al botón de votar que ejecuta la función votar
+  botonVotar.addEventListener('click', votar);
 
   // Añadimos un evento de click al botón de cerrar resumen que ejecuta la función cerrarResumenClick
   botonCerrarResumen.addEventListener('click', cerrarResumenClick);
