@@ -125,7 +125,7 @@
    * @returns {void}
    */
   const votar = () => {
-    window.location.assign('/resultados/')
+    window.location.assign('../resultados/')
   }
 
   // Recorremos las tarjetas de candidatos y añadimos un evento de click a cada una
